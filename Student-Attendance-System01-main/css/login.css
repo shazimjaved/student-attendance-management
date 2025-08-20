@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bg-gradient-login {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.container-login {
+    max-width: 600px; /* Increased width for laptops and PCs */
+    width: 100%;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.card-body {
+    padding: 2rem;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.login-form h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.login-form h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.form-control {
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 10px rgba(106, 17, 203, 0.5);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.4);
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 50%;
+}
+
+.text-center img {
+    border-radius: 50%;
+    border: 3px solid #6a11cb;
+    padding: 5px;
+    background: #fff;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
